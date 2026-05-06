@@ -124,7 +124,7 @@ try:
 except ImportError:
     _CURL_CFFI_AVAILABLE = False
 
-__version__ = "9.0.0"
+__version__ = "9.0.1"
 
 
 def _resolve_browser_type(ua: str) -> "BrowserType":

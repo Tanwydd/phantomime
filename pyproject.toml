@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "phantomime"
-version = "9.0.0"
+version = "9.0.1"
 description = "Humanized Playwright browser with full anti-fingerprinting and TLS impersonation via curl-cffi"
 readme = "README.md"
 license = { file = "LICENSE" }
