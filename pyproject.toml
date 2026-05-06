@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "phantomime"
+version = "9.0.0"
+description = "Humanized Playwright browser with full anti-fingerprinting and TLS impersonation via curl-cffi"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Tanwydd" },
+]
+keywords = [
+    "playwright",
+    "browser-automation",
+    "anti-fingerprinting",
+    "stealth",
+    "scraping",
+    "curl-cffi",
+    "tls-fingerprint",
+    "human-behavior",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "playwright>=1.44",
+    "numpy>=1.24",
+    "curl-cffi>=0.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tanwydd/phantomime"
+Repository = "https://github.com/Tanwydd/phantomime"
+"Bug Tracker" = "https://github.com/Tanwydd/phantomime/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["phantomime"]
